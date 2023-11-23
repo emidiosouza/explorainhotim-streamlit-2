@@ -8,7 +8,7 @@ import openai
 import sys
 
 from openai import OpenAI
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
 # Your chosen model
 MODEL = "gpt-4-1106-preview"
@@ -66,7 +66,7 @@ if uploaded_file is not None:
 
 # Initialize OpenAI assistant
 if "assistant" not in st.session_state:
-    openai.api_key = "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"
+    openai.api_key = "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"
     # Load the previously created assistant
     st.session_state.assistant = openai.beta.assistants.retrieve("asst_r9lhdoCrm0P5mmxV01RM18IB")
 
